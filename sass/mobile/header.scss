@@ -7,13 +7,13 @@
     line-height: 128%;
 }
 .logo{
-font-style: italic;
-font-weight: 700;
+font-weight: bold;
 letter-spacing: -0.03em;
 list-style: none;
 text-decoration: none;
+font-size: 18px;
 
-&--normal{
-    font-style: normal;
+&--italic{
+    font-style: italic;
 }
 }

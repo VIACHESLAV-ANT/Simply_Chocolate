@@ -8,12 +8,12 @@
 }
 
 .logo {
-  font-style: italic;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: -0.03em;
   list-style: none;
   text-decoration: none;
+  font-size: 18px;
 }
-.logo--normal {
-  font-style: normal;
+.logo--italic {
+  font-style: italic;
 }/*# sourceMappingURL=header.css.map */
