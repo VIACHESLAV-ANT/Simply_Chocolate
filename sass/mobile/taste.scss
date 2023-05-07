@@ -1,0 +1,51 @@
+.taste__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+.taste__text{
+    text-align: center;
+    letter-spacing: -0.02em;  
+}
+
+.taste__item{
+    padding: 28px 55px 28px 56px;
+    border-radius: 15px;
+    &--accent{
+        background-color: var(--accent-text);
+    }
+    &--white{
+        border: 1px solid #FD9222;
+    }
+    &--dark{
+        background-color: var(--secondary-background)
+        ;
+    }
+}
+
+.taste__image{
+    background-color: currentColor;
+}
+
+.taste__name{
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--basic-title);
+
+    
+    margin-top: 25px;
+
+    &--white{
+        color: var(--basic-text);
+    }
+
+}
