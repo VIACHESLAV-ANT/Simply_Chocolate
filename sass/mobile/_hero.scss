@@ -1,9 +1,11 @@
 .hero{
     color: var(--first-white-text);
-    // background-image: url(../image/jpg/chocolate-hero.jpg);
     max-width: 335px;
+    height: 620px;
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../image/jpg/chocolate-hero.jpg);
     border-radius: 30px;
+    padding-top: 395px;
+    padding-bottom: 20px;
 }
 
 .hero__title{
@@ -11,10 +13,14 @@ font-weight: 500;
 font-size: 20px;
 line-height: 120%;
 letter-spacing: -0.03em;
+margin-bottom: 32px;
+}
+.button{
+    display: flex;
 }
 
+
 .button__form{
-    min-width: 120px;
     height: 41px;
     background-color: var(--accent-text);
     color: currentColor;
@@ -23,6 +29,17 @@ letter-spacing: -0.03em;
     line-height: 121%;
     border: none;
 
+    &--buy{
+        margin-right: 14px;
+        min-width: 120px;
+    }
+
+    &--how{
+        opacity: 1;
+        min-width: 159px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid #FFFFFF;
+    }
 }
 
 .pointer{

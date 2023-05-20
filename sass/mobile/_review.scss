@@ -1,0 +1,41 @@
+.review__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;  
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+.review__name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    text-align: center;
+
+}
+
+.review__text{
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--secondary-dark-text);
+}
+
+.review__button{
+    font-weight: 600;
+    line-height: 121%;
+    text-align: center;
+
+    border: 1px solid #FD9222;
+    border-radius: 100px;
+    min-width: 165px;
+}
+
+.review__image{
+    width: 80px;
+    height: 80px;
+}

@@ -1,0 +1,39 @@
+.top__title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    &--accent{
+        color: var(--accent-text);
+    }
+}
+
+.top__text{
+    letter-spacing: -0.02em; 
+}
+
+.top__image{
+    border-radius: 15px;
+
+    &--carmel{
+        display: none;
+    }
+
+    &--dark{
+        display: none;
+    }
+}
+
+.top__button{
+    font-weight: 600;
+    line-height: 121%;
+    color: var(--first-white-text); 
+    background-color: var(--accent-text);
+    border-radius: 100px;
+    border: none;
+
+    min-width: 120px;
+}
