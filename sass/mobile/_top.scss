@@ -6,13 +6,17 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
 
+    margin-bottom: 32px;
+
     &--accent{
         color: var(--accent-text);
     }
 }
 
 .top__text{
-    letter-spacing: -0.02em; 
+    letter-spacing: -0.02em;
+
+    margin-bottom: 32px;
 }
 
 .top__image{
@@ -25,9 +29,14 @@
     &--dark{
         display: none;
     }
+
+    &--mobile{
+        margin-bottom: 20px;
+    }
 }
 
 .top__button{
+    display: block;
     font-weight: 600;
     line-height: 121%;
     color: var(--first-white-text); 
@@ -36,4 +45,11 @@
     border: none;
 
     min-width: 120px;
+    padding: 12px 28px;
+    margin: auto;
+}
+
+
+.top__list{
+    margin-bottom: 20px;
 }

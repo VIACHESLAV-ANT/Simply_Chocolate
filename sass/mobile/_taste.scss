@@ -6,6 +6,9 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
 
+    margin-bottom: 24px;
+    width: 283px;
+
     &--accent{
         color: var(--accent-text);
     }
@@ -13,12 +16,18 @@
 
 .taste__text{
     text-align: center;
-    letter-spacing: -0.02em;  
+    letter-spacing: -0.02em;
+
+    margin-bottom: 32px;
 }
 
 .taste__item{
     padding: 28px 55px 28px 56px;
     border-radius: 15px;
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
     &--accent{
         background-color: var(--accent-text);
     }
@@ -30,6 +39,7 @@
         ;
     }
 }
+
 
 .taste__image{
     background-color: currentColor;

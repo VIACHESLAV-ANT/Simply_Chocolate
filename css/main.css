@@ -1,3 +1,22 @@
+.container {
+  width: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+
+.page {
+  color: var(--basic-text);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 128%;
+  background-color: #FAFAFA;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +40,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .logo {
@@ -56,11 +75,11 @@
   stroke: black;
   width: 100%;
   height: 100%;
+  width: 28px;
+  height: 28px;
 }
 
 .button {
-  width: 28px;
-  height: 28px;
   background-color: transparent;
   border: none;
 }
@@ -111,7 +130,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 32px;
 }
 
-.button {
+.button--hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,10 +161,15 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 117%;
   letter-spacing: -0.03em;
+  margin-top: 32px;
 }
 
 .preference {
   background-color: rgb(30, 24, 35);
+}
+.preference--container {
+  padding-top: 20px;
+  padding-bottom: 36px;
 }
 
 .preference-general {
@@ -158,6 +182,8 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .preference-text {
   color: rgba(255, 255, 255, 0.7);
+  padding-right: 28px;
+  letter-spacing: -0.02em;
 }
 
 .preference-icon {
@@ -166,6 +192,15 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 365px;
+  margin-bottom: 22px;
+}
+
+.preference-title {
+  margin-bottom: 18px;
+}
+
+.preference-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .taste__title {
@@ -175,6 +210,8 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 24px;
+  width: 283px;
 }
 .taste__title--accent {
   color: var(--accent-text);
@@ -183,11 +220,15 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 .taste__text {
   text-align: center;
   letter-spacing: -0.02em;
+  margin-bottom: 32px;
 }
 
 .taste__item {
   padding: 28px 55px 28px 56px;
   border-radius: 15px;
+}
+.taste__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .taste__item--accent {
   background-color: var(--accent-text);
@@ -214,24 +255,6 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   color: var(--basic-text);
 }
 
-.container {
-  width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page {
-  color: var(--basic-text);
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 128%;
-  background-color: #FAFAFA;
-}
-
 .made__title {
   font-weight: 600;
   font-size: 20px;
@@ -239,6 +262,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 .made__title--accent {
   color: var(--accent-text);
@@ -246,12 +270,14 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .made__video {
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 
 .made__promotion {
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
+  padding-bottom: 20px;
 }
 
 .made__text {
@@ -269,6 +295,12 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .made__card {
   background-color: white;
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+
+.made__item:not(:last-child) {
+  padding-bottom: 18px;
 }
 
 .products-title {
@@ -283,28 +315,58 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   color: var(--accent-text);
 }
 
-.products-name {
+.products__name {
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  margin-bottom: 2px;
 }
 
-.products-text {
+.products__text {
   color: var(--secondary-dark-text);
   font-size: 12px;
   line-height: 117%;
   letter-spacing: -0.02em;
+  margin-bottom: 18px;
 }
 
-.products-price {
+.products__price {
   font-weight: 600;
   line-height: 121%;
   border-radius: 100px;
-  min-width: 94px;
+  padding: 8px 20px;
   background: #FAFAFA;
   border: 1px solid rgba(17, 17, 17, 0.1);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.products__item {
+  background-color: #FFFFFF;
+  padding: 32px 52px;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  margin-bottom: 20px;
+}
+
+.products__images {
+  margin-bottom: 8px;
+}
+
+.products__description {
+  text-align: center;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.products__title--accent {
+  color: var(--accent-text);
 }
 
 .top__title {
@@ -314,6 +376,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 .top__title--accent {
   color: var(--accent-text);
@@ -321,6 +384,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .top__text {
   letter-spacing: -0.02em;
+  margin-bottom: 32px;
 }
 
 .top__image {
@@ -332,8 +396,12 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 .top__image--dark {
   display: none;
 }
+.top__image--mobile {
+  margin-bottom: 20px;
+}
 
 .top__button {
+  display: block;
   font-weight: 600;
   line-height: 121%;
   color: var(--first-white-text);
@@ -341,6 +409,12 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   border-radius: 100px;
   border: none;
   min-width: 120px;
+  padding: 12px 28px;
+  margin: auto;
+}
+
+.top__list {
+  margin-bottom: 20px;
 }
 
 .review__title {
@@ -350,6 +424,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 74px;
 }
 .review__title--accent {
   color: var(--accent-text);
@@ -360,6 +435,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 133%;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .review__text {
@@ -369,23 +445,49 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .review__button {
+  display: block;
   font-weight: 600;
   line-height: 121%;
   text-align: center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border: 1px solid #FD9222;
   border-radius: 100px;
-  min-width: 165px;
+  padding: 12px 28px;
+  margin: auto;
 }
 
 .review__image {
   width: 80px;
   height: 80px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.review__item {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  -webkit-box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+          box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  padding: 56px 18px 42px 18px;
+  margin-bottom: 20px;
 }
 
 .subscribe {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../image/jpg/subcribe.jpg);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/jpg/subcribe.jpg);
   color: var(--first-white-text);
+  padding-top: 62px;
+  padding-bottom: 63px;
+}
+
+.container--nobottom {
+  margin-bottom: 0;
 }
 
 .subscribe__title {
@@ -395,14 +497,20 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin-bottom: 24px;
+  padding: 0 17.5px;
 }
 
 .subscribe__text {
   text-align: center;
   letter-spacing: -0.02em;
+  line-height: 129%;
+  padding: 0 4.5px;
+  margin-bottom: 24px;
 }
 
 .subscribe__button {
+  display: block;
   font-weight: 600;
   line-height: 121%;
   color: currentColor;
@@ -410,11 +518,14 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   min-width: 128px;
   border-radius: 100px;
   border: none;
+  padding: 12px 28px;
+  margin: auto;
 }
 
 .footer {
   color: var(--first-white-text);
   background-color: var(--secondary-background);
+  padding: 32px 0;
 }
 
 .footer__title {
@@ -422,6 +533,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.02em;
+  margin-bottom: 32px;
 }
 .footer__title--accent {
   color: var(--accent-text);

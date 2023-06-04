@@ -1,6 +1,7 @@
 .footer{
     color: var(--first-white-text);
     background-color: var(--secondary-background);
+    padding: 32px 0;
 }
 
 .footer__title{
@@ -9,6 +10,9 @@
     line-height: 117%;
     letter-spacing: -0.02em;
 
+
+    margin-bottom: 32px;
+    
     &--accent{
         color: var(--accent-text);
     }

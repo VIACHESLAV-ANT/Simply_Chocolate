@@ -1,5 +1,10 @@
 .preference{
     background-color: rgba(30, 24, 35, 1);
+
+ &--container{
+    padding-top: 20px;
+    padding-bottom: 36px;
+ }
 }
 
 .preference-general{
@@ -12,7 +17,9 @@
 
 .preference-text{
     color: rgba(255, 255, 255, 0.7);
-    ;
+    padding-right: 28px;
+    letter-spacing: -0.02em;
+
 }
 
 .preference-icon{
@@ -21,4 +28,13 @@
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 365px;
+    margin-bottom: 22px;
+}
+
+.preference-title{
+    margin-bottom: 18px;
+}
+
+.preference-item:not(:last-child){
+margin-bottom: 20px;
 }

@@ -13,7 +13,7 @@
 </head>
 <body class="page">
     <header class="header">
-        <div class="container header-container">
+        <div class="header-container container">
         <a href="./index.html" class="logo">
             SIMPLY<span class="logo--normal"> CHOCOLATE</span> 
         <svg class="logo__icon" width="24px" height="24px">
@@ -72,7 +72,7 @@
     <!-- Hero -->
     <section class="hero container">
         <h1 class="hero__title">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</h1>
-        <ul class="button">
+        <ul class="button button--hero">
             <li class="button__item">
                 <button class="button__form button__form--buy">Buy now</button>
             </li>
@@ -89,7 +89,7 @@
 
     <!-- preference -->
     <section class="preference">
-        <div class="container">
+        <div class="container preference--container">
         <h2 class="preference-general">Preference</h2>
         <ul class="preference-list">
             <li class="preference-item">
@@ -205,31 +205,39 @@
     <!-- products -->
     <section class="products">
     <div class="container">
-        <h2 class="products-title">OUR <span class="products-title--accent">PRODUCTS</span></h2>
-    <ul class="products-list">
-        <li class="products-item">
-            <img src="./image/jpg/product/orange.jpg" alt="photo chocolate" class="products-images">
-            <h3 class="products-name">orange</h3>
-            <p class="products-text">Dark chocolate</p>
-            <button class="products-price">45 UAH</button>
+        <h2 class="products__title">OUR <span class="products__title--accent">PRODUCTS</span></h2>
+    <ul class="products__list">
+        <li class="products__item">
+            <img src="./image/jpg/product/orange.jpg" alt="photo chocolate" class="products__images">
+            <div class="products__description">    
+                <h3 class="products__name">orange</h3>
+                <p class="products__text">Dark chocolate</p>
+                <button class="products__price">45 UAH</button>
+            </div>    
         </li>
-        <li class="products-item">
-            <img src="./image/jpg/product/applecranberry.jpg" alt="photo chocolate" class="products-images">
-            <h3 class="products-name">APPLE&CRANBERRY</h3>
-            <p class="products-text">Milk chocolate</p>
-            <button class="products-price">50 UAH</button>
+        <li class="products__item">
+            <img src="./image/jpg/product/applecranberry.jpg" alt="photo chocolate" class="products__images">
+            <div class="products__description">
+            <h3 class="products__name">APPLE&CRANBERRY</h3>
+            <p class="products__text">Milk chocolate</p>
+            <button class="products__price">50 UAH</button>
+            </div>
         </li>
-        <li class="products-item">
-            <img src="./image/jpg/product/limesea.jpg" alt="photo chocolate" class="products-images">
-            <h3 class="products-name">lime&sea salt</h3>
-            <p class="products-text">Dark chocolate</p>
-            <button class="products-price">66 UAH</button>
+        <li class="products__item">
+            <img src="./image/jpg/product/limesea.jpg" alt="photo chocolate" class="products__images">
+            <div class="products__description">
+            <h3 class="products__name">lime&sea salt</h3>
+            <p class="products__text">Dark chocolate</p>
+            <button class="products__price">66 UAH</button>
+            </div>
         </li>
-        <li class="products-item">
-            <img src="./image/jpg/product/pineapple.jpg" alt="photo chocolate" class="products-images">
-            <h3 class="products-name">pineapple</h3>
-            <p class="products-text">Dark chocolate</p>
-            <button class="products-price">54 UAH</button>
+        <li class="products__item">
+            <img src="./image/jpg/product/pineapple.jpg" alt="photo chocolate" class="products__images">
+            <div class="products__description">
+            <h3 class="products__name">pineapple</h3>
+            <p class="products__text">Dark chocolate</p>
+            <button class="products__price">54 UAH</button>
+            </div>
         </li>
     </ul>
     </div>
@@ -289,7 +297,7 @@
 
 <!-- subscribe -->
 <section class="subscribe">
-<div class="container">
+<div class="container container--nobottom">
     <h2 class="subscribe__title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe__text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
     <button class="subscribe__button">Subscribe</button>
