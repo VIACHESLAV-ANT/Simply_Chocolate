@@ -541,4 +541,34 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .contact__link {
   letter-spacing: -0.02em;
+}
+
+.container__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 32px;
+}
+
+.contact {
+  margin-right: 113px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation {
+  margin-top: 32px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.footer--container {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
