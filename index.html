@@ -15,19 +15,11 @@
     <header class="header">
         <div class="header-container container">
         <a href="./index.html" class="logo">
-            SIMPLY<span class="logo--normal"> CHOCOLATE</span> 
+            SIMPLY<span class="logo--normal">CHOCOLATE</span> 
         <svg class="logo__icon" width="24px" height="24px">
             <use href="./image/svg/header.svg#chocolate" alt="Photo chocolate"></use>
         </svg>
         </a>
-
-        <button class="button">
-            <svg class="button__icon">
-                <use href="./image/svg/menu.svg#menu" class="button__menu"></use>
-                <use href="./image/svg/menu.svg#close" class="button__close"></use>
-            </svg>
-        </button>
-        
         <div class="menu--content">
             <nav>
         <ul class="navigation">
@@ -35,16 +27,16 @@
                 <a href="/" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
-                <a href="/" class="navigation__link">How it’s made?</a>
+                <a href="#made" class="navigation__link">How it’s made?</a>
             </li>
             <li class="navigation__item">
-                <a href="/" class="navigation__link">Our products</a>
+                <a href="#products" class="navigation__link">Our products</a>
             </li>
             <li class="navigation__item">
-                <a href="/" class="navigation__link">Top sellers</a>
+                <a href="#top" class="navigation__link">Top sellers</a>
             </li>
             <li class="navigation__item">
-                <a href="/" class="navigation__link">Chocolate is loved</a>
+                <a href="#review" class="navigation__link">Chocolate is loved</a>
             </li>
         </ul>
 
@@ -64,8 +56,14 @@
                 </a>
             </li>
         </ul>
-    </div>
     </nav>
+    </div>
+    <button class="button-menu">
+        <svg class="button__icon">
+            <use href="./image/svg/menu.svg#menu" class="button__menu"></use>
+            <use href="./image/svg/menu.svg#close" class="button__close"></use>
+        </svg>
+    </button>
     </div>
     </header>
 
@@ -80,11 +78,14 @@
                 <button class="button__form button__form--how">How it's made</button>
             </li>
         </ul>
+        <div class="pointer--container">
         <p class="pointer">scroll down</p>
+        <a href="#footer">
         <svg class="pointer__icon">
-            <use></use>
+            <use href="./image/svg/hero/point.svg#point"></use>
         </svg>
-        
+    </a>
+    </div>
     </section>
 
     <!-- preference -->
@@ -141,26 +142,27 @@
         </p>
         <ul class="taste__list">
             <li class="taste__item taste__item--accent">
-                <img src="./image/jpg/taste/chocolate.jpg" alt="milk chocolate"  class="taste__images" width="224px">
+                <img src="./image/jpg/taste/milkchocolate.jpg" alt="milk chocolate"  class="taste__images" width="335px">
                 <p  class="taste__name">MILK CHOCOLATE</p>
             </li>
             <li class="taste__item taste__item--white">
-                <img src="./image/jpg/taste/milk.jpg" alt="milk in butle"  class="taste__images" width="224px">
+                <img src="./image/jpg/taste/milk.jpg" alt="milk in butle"  class="taste__images" width="335px">
                 <p  class="taste__name taste__name--white">milk</p>
             </li>
             <li class="taste__item taste__item--dark">
-                <img src="./image/jpg/taste/nuts.jpg" alt="four nuts"  class="taste__images" width="224px">
+                <img src="./image/jpg/taste/hazelnuts.jpg" alt="four nuts"  class="taste__images" width="335px">
                 <p  class="taste__name">nuts</p>
             </li>
             <li class="taste__item taste__item--white">
-                <img src="./image/jpg/taste/semi.jpg" alt="semi - sweet chocolate"  class="taste__images" width="224px">
+                <img src="./image/jpg/taste/chocolate.jpg" alt="semi - sweet chocolate"  class="taste__images" width="335px">
                 <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
             </li>
         </ul>
     </section>
 
     <!-- made -->
-    <section  class="made container">
+    <section  class="made" id="made">
+        <div class="container">
         <h2 class="made__title">HOW IT’S <span class="made__title--accent">MADE?</span></h2>
         <video
         src="./image/videochocolate.mp4"
@@ -200,14 +202,15 @@
             </li>
         </ul>
     </div>
+</div>
     </section>
 
     <!-- products -->
-    <section class="products">
+    <section class="products" id="products">
     <div class="container">
         <h2 class="products__title">OUR <span class="products__title--accent">PRODUCTS</span></h2>
     <ul class="products__list">
-        <li class="products__item">
+        <li class="products__item products__item--active">
             <img src="./image/jpg/product/orange.jpg" alt="photo chocolate" class="products__images">
             <div class="products__description">    
                 <h3 class="products__name">orange</h3>
@@ -240,11 +243,22 @@
             </div>
         </li>
     </ul>
+    <ul class="products__pilot">
+        <li class="products__button products__button--active"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+        <li class="products__button"></li>
+    </ul>
     </div>
 </section>
 
 <!-- top -->
-<section class="top">
+<section class="top" id="top">
 <div class="container">
     <h2 class="top__title">
         <span class="top__title--accent">Top</span> Sellers
@@ -269,13 +283,13 @@
 </section>
 
 <!-- chocolate -->
-<section class="review">
+<section class="review" id="review">
 <div class="container">
     <h2 class="review__title">
         <span class="review__title--accent">chocolate</span> is loved
     </h2>
     <ul class="review__list">
-        <li class="review__item">
+        <li class="review__item review__item--active">
             <img src="./image/jpg/review/Victoria.jpg" alt="photo people" class="review__image">
             <h3 class="review__name">Victoria Dobrzhanska</h3>
             <p class="review__text">I love this chocolate bar. Perfect combination of light crispy wafer, covered in a thin layer chocolate.</p>
@@ -291,7 +305,13 @@
             <p class="review__text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
         </li>
     </ul>
-    <button class="review__button">Leave a review</button>
+    <ul class="review__pilot">
+        <li class="review__button review__button--active"></li>
+        <li class="review__button"></li>
+        <li class="review__button"></li>
+        <li class="review__button"></li>
+    </ul>
+    <button class="review__buttan">Leave a review</button>
 </div>
 </section>
 
@@ -305,7 +325,7 @@
 </section>
 
 <!-- footer -->
-<footer class="footer">
+<footer class="footer" id="footer">
 <div class="footer--container container">
     <h2 class="footer__title"><span class="footer__title--accent">Chocolate</span> a delicious cure for a bad day</h2>
     <nav>
@@ -352,5 +372,8 @@
     </nav>
 </div>
 </footer>
+<script src="./java/review.json"></script>
+<script src="./java/products.json"></script>
+<script src="./java/headermenu.json"></script>
 </body>
 </html>

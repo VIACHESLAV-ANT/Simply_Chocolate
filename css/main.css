@@ -1,22 +1,31 @@
 .container {
-  width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   margin-bottom: 72px;
 }
 
-.page {
-  color: var(--basic-text);
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 128%;
-  background-color: #FAFAFA;
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+  }
+  .page {
+    color: var(--basic-text);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 128%;
+    background-color: #FAFAFA;
+  }
 }
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +50,7 @@
           justify-content: space-between;
   padding-top: 20px;
   margin-bottom: 14px;
+  position: relative;
 }
 
 .logo {
@@ -79,17 +89,61 @@
   height: 28px;
 }
 
-.button {
+.button-menu {
   background-color: transparent;
   border: none;
+  stroke: white;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .button__close {
+  position: absolute;
   display: none;
+  stroke: white;
+}
+.button__close--active {
+  display: block;
 }
 
 .menu--content {
+  width: 220px;
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #1E1823;
+  color: white;
+  height: 100vh;
+}
+.menu--content--active {
+  display: block;
+}
+
+header .navigation {
+  margin-top: 136px;
+  margin-left: 30px;
+}
+
+header .social {
+  margin-top: auto;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 :root {
@@ -161,7 +215,22 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 117%;
   letter-spacing: -0.03em;
+}
+
+.pointer__icon {
+  margin-left: 12px;
+  width: 28px;
+  height: 28px;
+}
+
+.pointer--container {
   margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .preference {
@@ -210,6 +279,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  margin: auto;
   margin-bottom: 24px;
   width: 283px;
 }
@@ -224,24 +294,10 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .taste__item {
-  padding: 28px 55px 28px 56px;
-  border-radius: 15px;
+  position: relative;
 }
 .taste__item:not(:last-child) {
   margin-bottom: 20px;
-}
-.taste__item--accent {
-  background-color: var(--accent-text);
-}
-.taste__item--white {
-  border: 1px solid #FD9222;
-}
-.taste__item--dark {
-  background-color: var(--secondary-background);
-}
-
-.taste__image {
-  background-color: currentColor;
 }
 
 .taste__name {
@@ -249,7 +305,9 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--basic-title);
-  margin-top: 25px;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
 }
 .taste__name--white {
   color: var(--basic-text);
@@ -281,16 +339,24 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .made__text {
+  margin-left: 16px;
+  position: relative;
   letter-spacing: -0.02em;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .made__text::before {
-  display: block;
+  position: absolute;
+  left: -16px;
+  top: 5px;
   content: " ";
   width: 8px;
   height: 8px;
   background-color: #4C4C4C;
   border: 1px solid #ECEDED;
-  border-radius: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 
 .made__card {
@@ -346,11 +412,15 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .products__item {
+  display: none;
   background-color: #FFFFFF;
   padding: 32px 52px;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   margin-bottom: 20px;
+}
+.products__item--active {
+  display: block;
 }
 
 .products__images {
@@ -369,6 +439,31 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   color: var(--accent-text);
 }
 
+.products__pilot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products__button {
+  display: block;
+  background: rgba(17, 17, 17, 0.1);
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px;
+  border: none;
+}
+.products__button--active {
+  width: 28px;
+  background: rgb(253, 146, 34);
+}
+.products__button:not(:first-child) {
+  margin-left: 13px;
+}
+
 .top__title {
   font-weight: 600;
   font-size: 20px;
@@ -385,6 +480,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 .top__text {
   letter-spacing: -0.02em;
   margin-bottom: 32px;
+  padding-right: 29px;
 }
 
 .top__image {
@@ -444,7 +540,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   color: var(--secondary-dark-text);
 }
 
-.review__button {
+.review__buttan {
   display: block;
   font-weight: 600;
   line-height: 121%;
@@ -455,6 +551,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   border-radius: 100px;
   padding: 12px 28px;
   margin: auto;
+  margin-top: 32px;
 }
 
 .review__image {
@@ -468,6 +565,7 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 
 .review__item {
+  display: none;
   position: relative;
   background: #FFFFFF;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -476,6 +574,34 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   border-radius: 15px;
   padding: 56px 18px 42px 18px;
   margin-bottom: 20px;
+}
+.review__item--active {
+  display: block;
+}
+
+.review__pilot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.review__button {
+  display: block;
+  background: rgba(17, 17, 17, 0.1);
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px;
+  border: none;
+}
+.review__button--active {
+  width: 28px;
+  background: rgb(253, 146, 34);
+}
+.review__button:not(:first-child) {
+  margin-left: 13px;
 }
 
 .subscribe {

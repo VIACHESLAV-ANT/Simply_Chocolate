@@ -29,16 +29,22 @@
 
 
 .made__text{
+    margin-left: 16px;
+    position: relative;
     letter-spacing: -0.02em;
+    align-items: baseline;
 
     &::before{
-        display: block;
+        position: absolute;
+        left: - 16px;
+        top: 5px;
         content: " ";
         width: 8px;
         height: 8px;
         background-color: #4C4C4C;
         border: 1px solid #ECEDED;
-        border-radius: 8px;
+        border-radius: 4px;
+        margin-right: 8px;
     }
 }
 
