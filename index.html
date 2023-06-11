@@ -372,8 +372,41 @@
     </nav>
 </div>
 </footer>
+<form class="form-buy js-speaker-form">
+    <b class="form-buy__title"><span class="form-buy__title--accent">BUY </span>NOW</b>
+    <ul role="group" class="form-buy__group">
+        <li><input type="checkbox" name="order" value="white-chokolad200gr"></li>
+        <li><input type="checkbox" name="order" value="dark-chokolad100gr"></li>
+        <li><input type="checkbox" name="order" value="milk-chokolad300gr"></li>
+    </ul>
+<div class="form-buy__field">
+    <label for="Personalinformation" class="fotm-buy__label">Personal information</label>
+<input type="text" name="name" id="Personalinformation" class="form-buy__input" autofocus placeholder="Name"/>
+<input type="text" name="surname" placeholder="Surname">
+</div>
+<div class="form-buy__field">
+    <label for="email" class="fotm-buy__label">Email</label>
+<input type="email" name="email" id="email" class="form-buy__input" placeholder="Enter your email">
+</div>
+<div class="form-buy__field">
+    <label for="phone" class="fotm-buy__label">Phone number</label>
+<input type="number" name="phone" id="phone" class="form-buy__input" placeholder="Phone number">
+</div>
+<div class="form-buy__field">
+    <label for="card" class="fotm-buy__label">Card number</label>
+<input type="number" name="card_number" class="form-buy__input" id="card" placeholder="Enter card">
+</div>
+<div class="form-buy__field">
+<label for="comment" class="fotm-buy__label">Comment</label>
+<textarea name="comment" id="comment" cols="" rows="10" placeholder="Enter text"></textarea>
+</div>
+<div class="form-buy__field">
+    <button type="submit">Submit</button>
+</div>
+</form>
 <script src="./java/review.json"></script>
 <script src="./java/products.json"></script>
 <script src="./java/headermenu.json"></script>
+<script src="./java/form.json"></script>
 </body>
 </html>
