@@ -375,9 +375,33 @@
 <form class="form-buy js-speaker-form">
     <b class="form-buy__title"><span class="form-buy__title--accent">BUY </span>NOW</b>
     <ul role="group" class="form-buy__group">
-        <li><input type="checkbox" name="order" value="white-chokolad200gr"></li>
-        <li><input type="checkbox" name="order" value="dark-chokolad100gr"></li>
-        <li><input type="checkbox" name="order" value="milk-chokolad300gr"></li>
+        <li class="form-buy__item">
+            <label for="order1" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order1" value="white-chokolad200gr">
+                <div class="form-buy__newbox">
+                    <img src="./image/jpg/buy/dark.jpg" alt="">
+                    <button class="form-buy__massa">100 g</button>
+                </div>
+            </label>
+        </li>
+        <li class="form-buy__item">            
+            <label for="order2" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order2" value="white-chokolad200gr">
+                    <div class="form-buy__newbox">
+                        <img src="./image/jpg/buy/white.jpg" alt="">
+                        <button class="form-buy__massa">200 g</button>
+                    </div>
+            </label>
+        </li>
+        <li>            
+            <label for="order3" >
+                <input class="form-buy__checkbox" type="checkbox" name="order" id="order3" value="white-chokolad200gr">
+                    <div class="form-buy__newbox">
+                        <img src="./image/jpg/buy/milk.jpg" alt="">
+                        <button class="form-buy__massa">300 g</button>
+                    </div>
+            </label>
+        </li>
     </ul>
 <div class="form-buy__field">
     <label for="Personalinformation" class="fotm-buy__label">Personal information</label>
