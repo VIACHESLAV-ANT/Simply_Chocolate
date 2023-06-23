@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+.taste__title{
+font-size: 24px;
+margin-bottom: 28px;
+width: 411px;
+}
+
+.taste__text{
+    width: 486px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.taste__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    // flex-direction: row-reverse;
+}
+
+.taste__item{
+    // width: calc(50% - 32px);
+    &:not(:last-child){
+    margin-bottom: 0;
+    }
+    &--white--last{
+        display: none;
+    }
+}
+}

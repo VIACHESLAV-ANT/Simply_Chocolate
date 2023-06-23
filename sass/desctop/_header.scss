@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .button-menu{
+        display: none;
+    }
+
+    header .navigation{
+        margin: 0;
+        padding: 0;
+        margin-right: 137px;
+    }
+
+    // .logo{
+    //     margin-right: 188px;
+    // }
+
+    .header-container{
+        display: flex;
+    }
+
+    .navigation__item:not(:last-child){
+        margin-bottom: 0;
+    }
+}

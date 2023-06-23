@@ -71,7 +71,7 @@
     <section class="container hero-container">
         <div class="hero">
         <h1 class="hero__title">Treat yourself or a loved one to<br/> our finest ingredients for a moment of pure delight!</h1>
-        <div>
+        <div class="nav-hero">
         <ul class="button button--hero">
             <li class="button__item">
                 <button class="button__form button__form--buy">Buy now</button>
@@ -150,6 +150,10 @@
                 <img src="./image/jpg/taste/milkchocolate.jpg" alt="milk chocolate"  class="taste__images" width="335px">
                 <p  class="taste__name">MILK CHOCOLATE</p>
             </li>
+            <li class="taste__item taste__item--white--second">
+                <img src="./image/jpg/taste/chocolate.jpg" alt="semi - sweet chocolate"  class="taste__images" width="335px">
+                <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
+            </li>
             <li class="taste__item taste__item--white">
                 <img src="./image/jpg/taste/milk.jpg" alt="milk in butle"  class="taste__images" width="335px">
                 <p  class="taste__name taste__name--white">milk</p>
@@ -158,7 +162,7 @@
                 <img src="./image/jpg/taste/hazelnuts.jpg" alt="four nuts"  class="taste__images" width="335px">
                 <p  class="taste__name">nuts</p>
             </li>
-            <li class="taste__item taste__item--white">
+            <li class="taste__item taste__item--white--last">
                 <img src="./image/jpg/taste/chocolate.jpg" alt="semi - sweet chocolate"  class="taste__images" width="335px">
                 <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
             </li>
@@ -168,12 +172,11 @@
 
     <!-- made -->
     <section  class="made" id="made">
-        <div class="container">
+        <div class="container made-container">
         <h2 class="made__title">HOW IT’S <span class="made__title--accent">MADE?</span></h2>
         <video
         src="./image/videochocolate.mp4"
-        poster="./image/jpg/video.jpg"
-        width="335"
+        poster="./image/jpg/made/table/image.jpg"
         controls
         preload="metadata"
         class="made__video"
@@ -274,17 +277,19 @@
             <img src="./image/jpg/top/nuts.jpg" alt="chocolate nuts" class="top__image top__image--nuts">
         </li>
         <li class="top__item">
-            <img src="" alt="chocolate carmel" class="top__image top__image--carmel">
+            <img src="./image/jpg/top/carmel.jpg" alt="chocolate carmel" class="top__image top__image--carmel">
         </li>
         <li class="top__item">
             <img src="./image/jpg/top/carmel.jpg" alt="chocolate dark" class="top__image top__image--dark">
         </li>
     </ul>
+    <div class="top__info">
     <p class="top__text">
         Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
     </p>
     <img src="./image/jpg/top/carmel.jpg" alt="chocolate carmel" class="top__image top__image--mobile">
     <button class="top__button">Buy now</button>
+    </div>
 </div>
 </section>
 
@@ -323,7 +328,7 @@
 
 <!-- subscribe -->
 <section class="subscribe">
-<div class="container container--nobottom">
+<div class="container container--subscribe">
     <h2 class="subscribe__title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe__text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
     <button class="subscribe__button">Subscribe</button>
@@ -333,8 +338,8 @@
 <!-- footer -->
 <footer class="footer" id="footer">
 <div class="footer--container container">
+    <div class="company--info">
     <h2 class="footer__title"><span class="footer__title--accent">Chocolate</span> a delicious cure for a bad day</h2>
-    <nav>
         <div class="container__contact">
     <ul class="contact">
         <li class="contact__item">Contact us</li>
@@ -357,6 +362,7 @@
             </a>
         </li>
     </ul>
+    </div>
 </div>
         <ul class="navigation">
             <li class="navigation__item">
@@ -375,7 +381,6 @@
                 <a href="/" class="navigation__link">Chocolate is loved</a>
             </li>
         </ul>
-    </nav>
 </div>
 </footer>
 <div class="backdrop-buy is-hidden">

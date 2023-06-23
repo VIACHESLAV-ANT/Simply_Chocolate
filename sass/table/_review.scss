@@ -1,0 +1,30 @@
+@media screen and (min-width: 768px) {
+    .review__list{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .review__image{
+        border-radius: 50px;
+    }
+
+    .review__item{
+        display: block;
+        width: calc(50% - 16px);
+        margin-bottom: 31px;
+        &:last-child{
+            display: none;
+        }
+        &:first-child{
+            margin-right: 16px;
+        }
+    }
+
+    .review__pilot{
+        margin-bottom: 64px;
+    }
+
+    .review__buttan{
+        padding: 14px 40px;
+    }
+}

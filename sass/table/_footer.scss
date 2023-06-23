@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+    .navigation{
+        display: flex;
+        margin-top: 24px;
+    }
+
+    .navigation__item:not(:last-child){
+        margin-right: 24px;
+    }
+
+    .footer--container{
+        margin-bottom: 0;
+    }
+
+    .company--info{
+        display: flex;
+        padding-bottom: 50px;
+        padding-top:18px;
+    }
+
+    .footer__title{
+        margin-right: 124px;
+    }
+
+    .contact__item{
+    
+        &:first-child{
+        margin-bottom: 14px;
+        }
+        &:nth-child(2n){
+        margin-bottom: 8px;
+        }
+    }
+
+    .container__contact{
+        display: flex;
+    }
+
+    .social__icon{
+    &:first-child{
+        margin-right: 8px;
+    }
+    }
+
+    .contact{
+        margin-right: 50px;
+    }
+}

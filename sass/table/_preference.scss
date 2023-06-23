@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+    .preference--container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .preference-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.preference-item{
+    flex-basis: calc((100% - 32px)/2);
+    &:not(:last-child){
+    margin-bottom: 0;
+    }
+}
+
+
+}
+
+

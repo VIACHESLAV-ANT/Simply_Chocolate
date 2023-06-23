@@ -1,8 +1,13 @@
 @media screen and (min-width: 768px) {
     .container{
-        width: 704px;
+        width: 768px;
         padding-left: 32px;
         padding-right: 32px;
         margin-bottom: 100px;
         }
+    
+    .container--subscribe{
+        margin-bottom: 0;
+        padding: 72px 150px;
+    }
 }

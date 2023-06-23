@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    .top__image{
+        &--carmel{
+        display: block;
+        }
+        &--mobile{
+            display: none;
+        }
+    }
+    .top__list{
+        display: flex;
+        margin-bottom: 32px;
+    }
+    .top__item:first-child{
+        margin-right: 16px;
+        }
+    
+    .top__text{
+        font-size: 14px;
+        width: 306px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .top__info{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .top__button{
+        margin:0;
+        padding: 14px 40px;
+    }
+}

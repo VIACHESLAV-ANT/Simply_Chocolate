@@ -28,6 +28,12 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
+
+    &--white--second{
+        @media screen and (max-width: 767px) {
+        display: none;
+        }
+    }
 }
 
 .taste__name{

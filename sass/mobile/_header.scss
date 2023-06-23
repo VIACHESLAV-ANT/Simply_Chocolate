@@ -68,6 +68,7 @@ height: 28px;
 
 
 .menu--content{
+    @media screen and (max-width: 1199px) {
     width: 220px;
     display: none;
     position: absolute;
@@ -80,6 +81,7 @@ height: 28px;
     &--active{
     display: block;
     }
+}
 }
 
 header .navigation{
