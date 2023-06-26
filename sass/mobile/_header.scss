@@ -11,6 +11,7 @@ justify-content: space-between;
 padding-top: 20px;
 margin-bottom: 14px;
 position: relative;
+width: 100%;
 }
 
 
@@ -30,12 +31,32 @@ position: relative;
 .logo__icon{
     margin-left: 4px;
 }
-
+.navigation__link{
+    position: relative;
+}
 .navigation__item{
     font-weight: 500;
     line-height: 114%;
     letter-spacing: -0.02em;
     align-items: center;
+
+    &:hover,:focus{
+        color: #FD9222;
+        // border-bottom: #FD9222 1px solid;
+    }
+
+    &:hover ::after,
+    :focus ::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        width: 24px;
+        height: 2px;
+        background-color: #FD9222;
+        border-radius: 2px;
+        bottom: -8px;
+        left: 0;
+      }
 }
 
 .button__icon{
@@ -44,6 +65,22 @@ width: 100%;
 height: 100%;
 width: 28px;
 height: 28px;
+
+&:hover .button__close,:focus .button__close{
+    stroke: #FD9222;
+}
+
+&:hover .button__menu,:focus .button__menu{
+    stroke: #FD9222;
+}
+
+&.button__icon--active .button__menu{
+    display: none;
+}
+
+&.button__icon--active .button__close{
+    display: block;
+}
 }
 
 .button-menu{
@@ -68,7 +105,7 @@ height: 28px;
 
 
 .menu--content{
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
     width: 220px;
     display: none;
     position: absolute;
@@ -100,4 +137,16 @@ header nav{
     height: 100%;
     padding-left: 20px;
     padding-bottom: 20px;
+}
+
+.social__icon{
+fill: #ffffff;
+
+&:first-child{
+    margin-right: 16px;
+}
+
+&:hover,:focus{
+    fill: #FD9222;
+}
 }

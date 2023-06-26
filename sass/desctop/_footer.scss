@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) {
+    .footer{
+        padding: 0;
+    }
+    
+    .footer--container{
+        padding: 50px 32px;
+        margin-bottom: 0;
+    }
+
+    .company--info{
+        padding-bottom: 62px;
+        justify-content: space-between;
+    }
+
+    .footer__title{
+        width: 300px;
+        margin: 0;
+    }
+
+    .contact__item:nth-child(2n) {
+        margin-bottom: 4px;
+    }
+
+    .contact {
+        margin-right: 63px;
+    }
+}

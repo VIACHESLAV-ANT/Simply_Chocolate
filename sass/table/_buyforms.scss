@@ -1,0 +1,118 @@
+@media screen and (min-width: 768px) {
+    .form-buy {
+        width: 609px;
+        padding: 48px;
+        background-color: #fafafa;
+    }
+    
+    .form-buy__title{
+        font-size: 24px;
+    }
+    .modal-buy {
+        min-width: 609px;
+        min-height: 1058px;
+    }
+
+    .form-buy__newbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 24px 20px 18px 20px;
+        background: #fff;
+        border: 1px solid rgba(17,17,17,.1);
+        border-radius: 15px;
+    }
+
+    .form-buy__group {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+
+    .form-buy__item{
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .form-buy__massa{
+        padding: 8px 27px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        height: auto;
+    }
+
+    .form-buy__field label {
+        font-size: 14px;
+    }
+
+    .form-buy__field input:first-child {
+        margin-bottom: 0;
+        margin-right: 21px;
+    }
+
+    .name-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .form-buy__input{
+        padding: 22px 24px;
+        border-radius: 13px;
+        border: 1.5px solid rgba(17, 17, 17, 0.05);
+        width: 100%;
+    }
+
+    .form-buy__input--phone {
+        padding-left: 177px;
+    }
+
+    .uk-date {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 43px;
+        left: 24px;
+        box-shadow: 1.5px 0px 0px rgba(0,0,0,.1);
+        width: 137px;
+        padding-right: 32px;
+        padding: 0;
+
+        &__flag{
+            width: 32px;
+            height: 24px;
+            margin-right: 18px;
+        }
+
+        &__number{
+            font-size: 18px;
+        }
+    }
+
+    .mastercard {
+        position: absolute;
+        right: 24px;
+        top: 44px;
+        width: 44px;
+        height: 30px;
+    }
+
+    .form-buy__submit{
+        padding: 14px 40px;
+    }
+
+    .form-buy-menu {
+        top: 24px;
+        right: 24px;
+    }
+
+    .form-buy__icon {
+        width: 100%;
+        height: 100%;
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,13 @@
+@media screen and (min-width: 1200px) {
+    .top__title{
+        margin-bottom: 50px;
+    }
+
+    .top__image--dark{
+        display: block;
+    }
+
+    .top__item:not(:last-child){
+        margin-right: 16px;
+    }
+}

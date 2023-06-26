@@ -159,6 +159,11 @@ color: #000000;
     
     
     color: #FFFFFF;
+
+        &:hover,:focus{
+            background-color: #FCF1E0;
+            color: var(--accent-text)
+        }
 }
 
 .mastercard{

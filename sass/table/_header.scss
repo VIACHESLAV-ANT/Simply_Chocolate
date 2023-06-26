@@ -1,5 +1,39 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  and (max-width: 1199px) {
 .header-container{
     margin-bottom: 24px;
+}
+
+.menu--content{
+    width: 290px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #1E1823;
+    color: white;
+    height: 100vh;
+
+    &--active{
+    display: block;
+    }
+}
+
+header .navigation {
+    margin-top: 156px;
+    margin-left: 85px;
+}
+
+.navigation__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.button-menu {
+    top: 24px;
+    right: 32px;
+}
+
+.button__icon {
+    width: 32px;
+    height: 32px;
 }
 }

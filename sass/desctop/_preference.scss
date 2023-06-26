@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px) {
+    .preference-item{
+        position: relative;
+    flex-basis: calc((100% - 70px)/3);
+    &:not(:last-child){
+        padding-right: 18px;
+        margin-right: 70px;
+        // border-right: 1px rgba(255, 255, 255, 0.50) solid;
+    }
+
+    &:last-child{
+        flex-basis: calc(((100% - 70px)/3) - 18px);
+    }
+
+    &:not(:last-child)::after{
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    height: 124px;
+    border-right: 1px rgba(255, 255, 255, 0.50) solid;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+}
+
+    .preference--container{
+        padding: 50px;
+    }
+
+    .preference-list{
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    .preference-text{
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+    .modal-our {
+        min-width: 517px;
+        min-height: 628px;
+        background-color: var(--white-color);
+        position: absolute;
+        top: 40px;
+    }
+    
+    .form-our {
+        min-width: 311px;
+        min-height: 471px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px;
+        background-color: #fafafa;
+        border-radius: 15px;
+    }
+
+
+    .form-our__title{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .form-our__input{
+        padding: 22px 24px;
+    }
+
+    .form-our__field {
+        margin-bottom: 18px;
+    }
+
+    input ::placeholder{
+        font-size: 18px;
+    }
+
+    .form-our__submit{
+        padding: 14px 40px;
+    }
+
+    .our__uk-date {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        top: 17px;
+        left: 24px;
+        box-shadow: 1.5px 0px 0px rgba(0,0,0,.1);
+        width: 137px;
+        padding-right: 32px;
+        padding: 0;
+
+        &__flag{
+            width: 32px;
+            height: 24px;
+            margin-right: 18px;
+        }
+
+        &__number{
+            font-size: 18px;
+        
+        }
+    }
+    .form-our__input--phone {
+    padding-left: 177px;
+    }
+}

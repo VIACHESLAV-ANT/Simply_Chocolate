@@ -42,6 +42,11 @@
     padding: 12px 28px;
     margin: auto;
     margin-top: 32px;
+
+    &:hover,:focus{
+        background-color: #FD9222;
+        color: #FFFFFF;
+    }
 }
 
 .review__image{

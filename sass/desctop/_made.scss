@@ -1,0 +1,23 @@
+@media screen and (min-width: 1200px) {
+    .made__body{
+        display: flex;
+    }
+
+    .made__video{
+        width: 600px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .made__promotion{
+        padding-bottom: 0;
+    }
+
+    .made__item:not(:last-child) {
+        padding-bottom: 24px;
+    }
+
+    .made__list{
+        padding-right: 27px;
+    }
+}

@@ -13,11 +13,11 @@
 </head>
 <body class="page">
     <header class="header">
-        <div class="header-container container">
+        <div class="container header-container">
         <a href="./index.html" class="logo">
             SIMPLY<span class="logo--normal">CHOCOLATE</span> 
         <svg class="logo__icon" width="24px" height="24px">
-            <use href="./image/svg/header.svg#chocolate" alt="Photo chocolate"></use>
+            <use href="./image/svg/header.svg#logo-chocolate" alt="Photo chocolate"></use>
         </svg>
         </a>
         <div class="menu--content">
@@ -44,14 +44,14 @@
             <li class="social__item">
                 <a href="https://www.instagram.com/" class="social__link">
                     <svg class="social__icon" width="24px" height="24px">
-                        <use href="./image/svg/header.svg#instagram"></use>
+                        <use href="./image/svg/header1.svg#instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="social__item">
                 <a href="https://twitter.com/" class="social__link">
                     <svg class="social__icon" width="24px" height="24px">
-                        <use href="./image/svg/header.svg#twitter"></use>
+                        <use href="./image/svg/header1.svg#twitter"></use>
                     </svg>
                 </a>
             </li>
@@ -60,8 +60,8 @@
     </div>
     <button class="button-menu">
         <svg class="button__icon">
-            <use href="./image/svg/menu.svg#menu" class="button__menu"></use>
-            <use href="./image/svg/menu.svg#close" class="button__close"></use>
+            <use href="./image/svg/header.svg#menu" class="button__menu"></use>
+            <use href="./image/svg/header.svg#close" class="button__close"></use>
         </svg>
     </button>
     </div>
@@ -81,14 +81,12 @@
                 </button>
             </li>
         </ul>
-        <div class="pointer--container">
+        <a href="#footer" class="pointer--container">
         <p class="pointer">scroll down</p>
-        <a href="#footer">
         <svg class="pointer__icon">
             <use href="./image/svg/hero/point.svg#point"></use>
         </svg>
     </a>
-    </div>
 </div>
 </div>
     </section>
@@ -147,23 +145,128 @@
         </p>
         <ul class="taste__list">
             <li class="taste__item taste__item--accent">
-                <img src="./image/jpg/taste/milkchocolate.jpg" alt="milk chocolate"  class="taste__images" width="335px">
+                <picture>
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/mobile/milkchocolate/milkchocolate1x.jpg 1x,
+                    ./image/jpg/taste/mobile/milkchocolate/milkchocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/mobile/milkchocolate/milkchocolate2x.jpg 2x,
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/descktop/milkchocolate/milkchocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/descktop/milkchocolate/milkchocolate2x.jpg 2x,
+                    ./image/jpg/taste/descktop/milkchocolate/milkchocolate1x.jpg 1x,
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="milk chocolate"  
+                class="taste__images"
+                />
+            </picture>
                 <p  class="taste__name">MILK CHOCOLATE</p>
             </li>
             <li class="taste__item taste__item--white--second">
-                <img src="./image/jpg/taste/chocolate.jpg" alt="semi - sweet chocolate"  class="taste__images" width="335px">
+                <picture>
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/mobile/chocolate/chocolate1x.jpg 1x,
+                    ./image/jpg/taste/mobile/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/mobile/chocolate/chocolate2x.jpg 2x,
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/descktop/chocolate/chocolate1x.jpg 1x,
+                    ./image/jpg/taste/descktop/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/descktop/chocolate/chocolate2x.jpg 2x,
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="semi - sweet chocolate"  
+                class="taste__images"
+                />
+            </picture>
                 <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
             </li>
             <li class="taste__item taste__item--white">
-                <img src="./image/jpg/taste/milk.jpg" alt="milk in butle"  class="taste__images" width="335px">
+                <picture>
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/mobile/milk/milk1x.jpg 1x,
+                    ./image/jpg/taste/mobile/milk/milk1.5x.jpg 1.5x,
+                    ./image/jpg/taste/mobile/milk/milk2x.jpg 2x,
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/descktop/milk/milk1.5x.jpg 1.5x,
+                    ./image/jpg/taste/descktop/milk/milk2x.jpg 2x,
+                    ./image/jpg/taste/descktop/milk/milk1x.jpg 1x,
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/taste/mobile/milk/milk1.5x.jpg 1.5x" 
+                alt="milk"  
+                class="taste__images"
+                />
+            </picture>
                 <p  class="taste__name taste__name--white">milk</p>
             </li>
             <li class="taste__item taste__item--dark">
-                <img src="./image/jpg/taste/hazelnuts.jpg" alt="four nuts"  class="taste__images" width="335px">
+                <picture>
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/mobile/hazelnuts/hazelnuts1x.jpg 1x,
+                    ./image/jpg/taste/mobile/hazelnuts/hazelnuts1.5x.jpg 1.5x,
+                    ./image/jpg/taste/mobile/hazelnuts/hazelnuts2x.jpg 2x,
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/descktop/hazelnuts/hazelnuts1.5x.jpg 1.5x,
+                    ./image/jpg/taste/descktop/hazelnuts/hazelnuts2x.jpg 2x,
+                    ./image/jpg/taste/descktop/hazelnuts/hazelnuts1x.jpg 1x,
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/taste/mobile/milk/milk1.5x.jpg 1.5x" 
+                alt="milk"  
+                class="taste__images"
+                />
+            </picture>
                 <p  class="taste__name">nuts</p>
             </li>
             <li class="taste__item taste__item--white--last">
-                <img src="./image/jpg/taste/chocolate.jpg" alt="semi - sweet chocolate"  class="taste__images" width="335px">
+                <picture>
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/mobile/chocolate/chocolate1x.jpg 1x,
+                    ./image/jpg/taste/mobile/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/mobile/chocolate/chocolate2x.jpg 2x,
+                    "
+                    media="(max-width: 1199px)">
+
+                    <source              
+                    srcset="
+                    ./image/jpg/taste/descktop/chocolate/chocolate1x.jpg 1x,
+                    ./image/jpg/taste/descktop/chocolate/chocolate1.5x.jpg 1.5x,
+                    ./image/jpg/taste/descktop/chocolate/chocolate2x.jpg 2x,
+                    "
+                    media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/taste/mobile/milkchocolate.jpg" 
+                alt="semi - sweet chocolate"  
+                class="taste__images"
+                />
+            </picture>
                 <p  class="taste__name taste__name--white">SEMI - SWEET CHOCOLATE</p>
             </li>
         </ul>
@@ -174,13 +277,38 @@
     <section  class="made" id="made">
         <div class="container made-container">
         <h2 class="made__title">HOW IT’S <span class="made__title--accent">MADE?</span></h2>
+        <div class="made__body">
         <video
-        src="./image/videochocolate.mp4"
-        poster="./image/jpg/made/table/image.jpg"
+        src="../image/videochocolate.mp4"
+        controls poster="./image/jpg/video/table/img1.5x.jpg"
         controls
         preload="metadata"
         class="made__video"
-        ></video>
+        >
+        <source              
+        srcset="
+        ./image/jpg/video/mobile/img1.5x.jpg,
+        ./image/jpg/video/mobile/img1.5x.jpg,
+        ./image/jpg/video/mobile/img1.5x.jpg,
+        "
+        media="(max-width: 767px)">
+
+        <source              
+        srcset="
+        ./image/jpg/video/Tablet/img1.5x.jpg,
+        ./image/jpg/video/Tablet/img1.5x.jpg,
+        ./image/jpg/video/Tablet/img1.5x.jpg,
+        "
+        media="(max-width: 1199px)">
+
+        <source              
+        srcset="
+        ./image/jpg/video/Desctop/img1.5x.jpg,
+        ./image/jpg/video/Desctop/img1.5x.jpg,
+        ./image/jpg/video/Desctop/img1.5x.jpg,
+        "
+        media="(min-width: 1200px)">
+    </video>
         <div class="made__card">
         <h3 class="made__promotion">Try  our chocolates today and discover the perfect balance of flavor</h3>
         <ul class="made__list">
@@ -210,6 +338,7 @@
                 </p>
             </li>
         </ul>
+    </div>
     </div>
 </div>
     </section>
@@ -274,20 +403,133 @@
     </h2>
     <ul class="top__list">
         <li class="top__item">
-            <img src="./image/jpg/top/nuts.jpg" alt="chocolate nuts" class="top__image top__image--nuts">
+            <picture>
+                <source              
+                srcset="
+                ./image/jpg/top/mobile/nuts/nuts1x.jpg 1x,
+                ./image/jpg/top/mobile/nuts/nuts1.5x.jpg 1.5x,
+                ./image/jpg/top/mobile/nuts/nuts2x.jpg 2x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/table/nuts/nuts1x.jpg 1x,
+                ./image/jpg/top/table/nuts/nuts1.5x.jpg 1.5x,
+                ./image/jpg/top/table/nuts/nuts2x.jpg 2x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/descktop/nuts/nuts1x.jpg 1x,
+                ./image/jpg/top/descktop/nuts/nuts1.5x.jpg 1.5x,
+                ./image/jpg/top/descktop/nuts/nuts2x.jpg 2x,
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/top/table/nuts/nuts1x.jpg"
+                alt="chocolate nuts" 
+                class="top__image top__image--nuts" />
+            </picture>
         </li>
         <li class="top__item">
-            <img src="./image/jpg/top/carmel.jpg" alt="chocolate carmel" class="top__image top__image--carmel">
+            <picture>
+                <source              
+                srcset="
+                ./image/jpg/top/mobile/carmel/carmel1x.jpg 1x,
+                ./image/jpg/top/mobile/carmel/carmel1.5x.jpg 1.5x,
+                ./image/jpg/top/mobile/carmel/carmel2x.jpg 2x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/table/carmel/carmel1x.jpg 1x,
+                ./image/jpg/top/table/carmel/carmel1.5x.jpg 1.5x,
+                ./image/jpg/top/table/carmel/carmel2x.jpg 2x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/descktop/carmel/carmel1x.jpg 1x,
+                ./image/jpg/top/descktop/carmel/carmel1.5x.jpg 1.5x,
+                ./image/jpg/top/descktop/carmel/carmel2x.jpg 2x,
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/top/table/carmel/carmel1x.jpg" 
+                alt="chocolate carmel" 
+                class="top__image top__image--carmel" />
+            </picture>
+            
         </li>
         <li class="top__item">
-            <img src="./image/jpg/top/carmel.jpg" alt="chocolate dark" class="top__image top__image--dark">
+            <picture>
+                <source              
+                srcset="
+                ./image/jpg/top/mobile/darkchocolate/darkchocolate1x.jpg 1x,
+                ./image/jpg/top/mobile/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./image/jpg/top/mobile/darkchocolate/darkchocolate2x.jpg 2x,
+                "
+                media="(max-width: 767px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/table/darkchocolate/darkchocolate1x.jpg 1x,
+                ./image/jpg/top/table/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./image/jpg/top/table/darkchocolate/darkchocolate2x.jpg 2x,
+                "
+                media="(max-width: 1199px)">
+
+                <source              
+                srcset="
+                ./image/jpg/top/descktop/darkchocolate/darkchocolate1x.jpg 1x,
+                ./image/jpg/top/descktop/darkchocolate/darkchocolate1.5x.jpg 1.5x,
+                ./image/jpg/top/descktop/darkchocolate/darkchocolate2x.jpg 2x,
+                "
+                media="(min-width: 1200px)">
+                <img 
+                src="./image/jpg/top/descktop/darkchocolate/darcchocolate1x.jpg" 
+                alt="chocolate dark" 
+                class="top__image top__image--dark"/>
+            </picture> 
         </li>
     </ul>
     <div class="top__info">
     <p class="top__text">
         Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
     </p>
-    <img src="./image/jpg/top/carmel.jpg" alt="chocolate carmel" class="top__image top__image--mobile">
+    <picture>
+        <source              
+        srcset="
+        ./image/jpg/top/mobile/carmel/carmel1x.jpg 1x,
+        ./image/jpg/top/mobile/carmel/carmel1.5x.jpg 1.5x,
+        ./image/jpg/top/mobile/carmel/carmel2x.jpg 2x,
+        "
+        media="(max-width: 767px)">
+
+        <source              
+        srcset="
+        ./image/jpg/top/table/carmel/carmel1x.jpg 1x,
+        ./image/jpg/top/table/carmel/carmel1.5x.jpg 1.5x,
+        ./image/jpg/top/table/carmel/carmel2x.jpg 2x,
+        "
+        media="(max-width: 1199px)">
+
+        <source              
+        srcset="
+        ./image/jpg/top/descktop/carmel/carmel1x.jpg 1x,
+        ./image/jpg/top/descktop/carmel/carmel1.5x.jpg 1.5x,
+        ./image/jpg/top/descktop/carmel/carmel2x.jpg 2x,
+        "
+        media="(min-width: 1200px)">
+        <img 
+        src="./image/jpg/top/descktop/carmel.jpg" 
+        alt="chocolate carmel" 
+        class="top__image top__image--mobile"/>
+    </picture>
     <button class="top__button">Buy now</button>
     </div>
 </div>
@@ -339,7 +581,7 @@
 <footer class="footer" id="footer">
 <div class="footer--container container">
     <div class="company--info">
-    <h2 class="footer__title"><span class="footer__title--accent">Chocolate</span> a delicious cure for a bad day</h2>
+    <h2 class="footer__title"><span class="footer__title--accent">Chocolate</span> a delicious<br/> cure for a bad day</h2>
         <div class="container__contact">
     <ul class="contact">
         <li class="contact__item">Contact us</li>
@@ -350,14 +592,14 @@
         <li class="social__item">
             <a href="https://www.instagram.com/" class="social__link">
                 <svg class="social__icon" width="24px" height="24px">
-                    <use href="./image/svg/header.svg#instagram"></use>
+                    <use href="./image/svg/header1.svg#instagram"></use>
                 </svg>
             </a>
         </li>
         <li class="social__item">
             <a href="https://twitter.com/" class="social__link">
                 <svg class="social__icon" width="24px" height="24px">
-                    <use href="./image/svg/header.svg#twitter"></use>
+                    <use href="./image/svg/header1.svg#twitter"></use>
                 </svg>
             </a>
         </li>
@@ -397,7 +639,27 @@
             <label for="order1" >
                 <input class="form-buy__checkbox" type="checkbox" name="order" id="order1" value="white-chokolad200gr">
                 <div class="form-buy__newbox">
-                    <img src="./image/jpg/buy/dark.jpg" alt="">
+                    <picture>
+                        <source              
+                        srcset="
+                        ./image/jpg/formbuy/mobile/white/white1x.jpg 1x,
+                        ./image/jpg/formbuy/mobile/white/white1.5x.jpg 1.5x,
+                        ./image/jpg/formbuy/mobile/white/white2x.jpg 2x,
+                        "
+                        media="(max-width: 767px)">
+    
+                        <source              
+                        srcset="
+                        ./image/jpg/formbuy/table/white/white1x.jpg 1x,
+                        ./image/jpg/formbuy/table/white/white1.5x.jpg 1.5x,
+                        ./image/jpg/formbuy/table/white/white2x.jpg 2x,
+                        "
+                        media="(min-width: 768px)">
+                        <img 
+                        src="./image/jpg/formbuy/table/white/white1x.jpg" 
+                        alt="white chocoled" />
+                </picture>
+                    
                     <button class="form-buy__massa">100 g</button>
                 </div>
             </label>
@@ -406,7 +668,25 @@
             <label for="order2" >
                 <input class="form-buy__checkbox" type="checkbox" name="order" id="order2" value="white-chokolad200gr">
                     <div class="form-buy__newbox">
-                        <img src="./image/jpg/buy/white.jpg" alt="">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./image/jpg/formbuy/mobile/milk/milk1x.jpg 1x,
+                            ./image/jpg/formbuy/mobile/milk/milk1.5x.jpg 1.5x,
+                            ./image/jpg/formbuy/mobile/milk/milk2x.jpg 2x,
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./image/jpg/formbuy/table/milk/milk1x.jpg 1x,
+                            ./image/jpg/formbuy/table/milk/milk1.5x.jpg 1.5x,
+                            ./image/jpg/formbuy/table/milk/milk2x.jpg 2x,
+                            "
+                            media="(min-width: 768px)">
+                            <img src="./image/jpg/formbuy/mobile/milk/milk1x.jpg" 
+                            alt="milk chocxolate"/>
+                    </picture>
                         <button class="form-buy__massa">200 g</button>
                     </div>
             </label>
@@ -415,7 +695,26 @@
             <label for="order3" >
                 <input class="form-buy__checkbox" type="checkbox" name="order" id="order3" value="white-chokolad200gr">
                     <div class="form-buy__newbox">
-                        <img src="./image/jpg/buy/milk.jpg" alt="">
+                        <picture>
+                            <source              
+                            srcset="
+                            ./image/jpg/formbuy/mobile/darck/darck1x.jpg 1x,
+                            ./image/jpg/formbuy/mobile/darck/darck1.5x.jpg 1.5x,
+                            ./image/jpg/formbuy/mobile/darck/darck2x.jpg 2x,
+                            "
+                            media="(max-width: 767px)">
+        
+                            <source              
+                            srcset="
+                            ./image/jpg/formbuy/table/darck/darck1x.jpg 1x,
+                            ./image/jpg/formbuy/table/darck/darck1.5x.jpg 1.5x,
+                            ./image/jpg/formbuy/table/darck/darck2x.jpg 2x,
+                            "
+                            media="(min-width: 768px)">
+                            <img 
+                            src="./image/jpg/formbuy/table/darck/darck1x.jpg" 
+                            alt="darck chocolate"/>
+                    </picture>
                         <button class="form-buy__massa">300 g</button>
                     </div>
             </label>
@@ -423,8 +722,10 @@
     </ul>
 <div class="form-buy__field">
     <label for="Personalinformation" class="fotm-buy__label">Personal information</label>
+    <div class="name-container">
     <input type="text" name="name" id="Personalinformation" class="form-buy__input" autofocus placeholder="Name"/>
     <input type="text" name="surname" class="form-buy__input" placeholder="Surname">
+    </div>
 </div>
 <div class="form-buy__field">
     <label for="email" class="fotm-buy__label">Email</label>

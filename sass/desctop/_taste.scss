@@ -1,0 +1,18 @@
+@media screen and (min-width: 1200px) {
+    .taste__item{
+
+        &--white--last{
+            display: block;
+        }
+
+        &--white--second{
+            display: none;
+        }
+    }
+
+    .taste__list{
+        gap: 19px;
+        flex-wrap: nowrap;
+        
+    }
+}

@@ -65,6 +65,11 @@
     right: 0;
     
     color: #FFFFFF;
+
+    &:hover,:focus{
+        background-color: #FCF1E0;
+        color: var(--accent-text)
+    }
 }
 
 

@@ -1,29 +1,47 @@
 @media screen and (min-width: 1200px) {
-    header nav{
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-    }
-
     .button-menu{
         display: none;
     }
 
     header .navigation{
         margin: 0;
-        padding: 0;
+        display: flex;
         margin-right: 137px;
     }
 
-    // .logo{
-    //     margin-right: 188px;
-    // }
-
     .header-container{
-        display: flex;
+        padding: 0px 32px;
+        margin-bottom: 0;
+        height: 100%;
     }
 
-    .navigation__item:not(:last-child){
-        margin-bottom: 0;
+    .header nav{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigation__item{
+        padding-top: 28px;
+        padding-bottom: 32px;
+        &:not(:last-child){
+            margin-bottom: 0;
+        }
+        
+    }
+
+
+    header .social__icon{
+        fill: black;
+    }
+
+    .logo{
+        font-size: 18px;
+    }
+
+    header .social {
+        margin-top: 0;
     }
 }

@@ -48,6 +48,11 @@
     min-width: 120px;
     padding: 12px 28px;
     margin: auto;
+
+        &:hover,:focus{
+            background-color: #FCF1E0;
+            color: var(--accent-text)
+        }
 }
 
 

@@ -28,8 +28,18 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 padding-bottom: 32px;
 }
 
-.contact{
-    margin-right: 113px;
+.contact__item{
+    &:first-child{
+        margin-bottom: 14px;
+    }
+
+    &:nth-child(2n){
+        margin-bottom: 4px;
+    }
+
+    &:hover,:focus{
+        color: #FD9222;
+    }
 }
 .social{
     display: flex;
@@ -45,4 +55,14 @@ margin-bottom: 18px;
 
 .footer--container{
     margin-bottom: 0;
+}
+
+footer {
+& .company--info{
+    display: block;
+}
+& .container__contact{
+    display: flex;
+    justify-content: space-between;
+}
 }

@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+    .form-new{
+        width: 538px;
+        min-height: 216px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+        background-color: #FAFAFA;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    } 
+
+    .modal-new {
+        min-width: 538px;
+        min-height: 412px;
+    }
+
+    .form-new__pictures {
+        display: block;
+        width: 100%;
+        height: 196px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .form-new__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .form-new-menu {
+        top: 24px;
+        right: 24px;
+    }
+
+    .form-new__title{
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
+
+    .form-new__submit{
+        position: relative;
+    }
+}

@@ -1,14 +1,14 @@
 .subscribe{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/jpg/subcribe.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../image/jpg/subscribe/mobile/subcribe.jpg);
     color: var(--first-white-text);
-
-    // padding-top: 62px;
-    // padding-bottom: 63px;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.container--nobottom{
+.container--subscribe{
     margin-bottom: 0;
+    padding: 62px 20px 63px 20px;
 }
 .subscribe__title{
     font-weight: 600;
@@ -44,4 +44,9 @@
 
     padding: 12px 28px;
     margin: auto;
+
+    &:hover, :focus{
+        background-color: #FCF1E0;
+        color: var(--accent-text);
+    }
 }

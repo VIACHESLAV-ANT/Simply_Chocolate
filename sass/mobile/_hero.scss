@@ -1,8 +1,6 @@
 .hero{
     color: var(--first-white-text);
-    max-width: 335px;
-    height: 620px;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../image/jpg/chocolate-hero.jpg);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../image/jpg/hero/mobile/chocolate1.jpg);
     border-radius: 30px;
     padding-top: 395px;
     padding: 395px 20px 20px 20px;
@@ -32,6 +30,10 @@ margin-bottom: 32px;
     &--buy{
         margin-right: 14px;
         min-width: 120px;
+        &:hover,:focus{
+            background-color: #FCF1E0;
+            color: var(--accent-text)
+        }
     }
 
     &--how{
@@ -39,6 +41,10 @@ margin-bottom: 32px;
         min-width: 159px;
         background-color: rgba(255, 255, 255, 0);
         border: 1px solid #FFFFFF;
+        &:hover,:focus{
+            color: var(--accent-text);
+            border-color:var(--accent-text);
+        }
     }
 }
 
@@ -53,10 +59,23 @@ margin-bottom: 32px;
     margin-left: 12px;
     width: 28px;
     height: 28px;
+    border-radius: 28px;
+    background: #FFF;
+    fill: var(--accent-text);
+    padding: 6px;
 }
 
 .pointer--container{
 margin-top: 32px;
 display: flex;
 align-items: center;
+
+&:hover .pointer, :focus .pointer{
+    color: var(--accent-text);
+}
+
+&:hover .pointer__icon, :focus .pointer__icon{
+    fill: #FFFFFF;
+    background-color: var(--accent-text);
+}
 }
