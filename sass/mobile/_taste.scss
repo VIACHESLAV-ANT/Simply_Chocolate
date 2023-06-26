@@ -35,6 +35,10 @@
         display: none;
         }
     }
+
+    &:hover .taste__card{
+        display: block;
+    }
 }
 
 .taste__name{
@@ -56,4 +60,47 @@
 .taste__images{
     border-radius: 15px;
     // border: 1px solid #FD9222;
+}
+
+.taste__card{
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 28px;
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+
+    &__title{
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+}
+
+.card__date{
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.info__name{
+    padding: 6px 16px;
+    background-color: var(--accent-text);
+    border-radius: 35px;
+    color: #FFF;
+    margin-right: 6px;
+}
+
+.info__benefits{
+    padding: 6px 16px;
+    border-radius: 35px;
+    border-radius: 35px;
+    border: 1px solid var(--unnamed, #FD9222);
+}
+
+.taste__card__text{
+    font-size: 14px;
+    font-family: Montserrat;
+    line-height: 18px;
+    letter-spacing: -0.28px; 
 }

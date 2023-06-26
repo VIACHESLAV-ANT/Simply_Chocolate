@@ -26,10 +26,10 @@ margin-bottom: 32px;
     font-weight: 600;
     line-height: 121%;
     border: none;
+    padding: 12px 28px;
 
     &--buy{
         margin-right: 14px;
-        min-width: 120px;
         &:hover,:focus{
             background-color: #FCF1E0;
             color: var(--accent-text)
@@ -38,7 +38,6 @@ margin-bottom: 32px;
 
     &--how{
         opacity: 1;
-        min-width: 159px;
         background-color: rgba(255, 255, 255, 0);
         border: 1px solid #FFFFFF;
         &:hover,:focus{
@@ -78,4 +77,8 @@ align-items: center;
     fill: #FFFFFF;
     background-color: var(--accent-text);
 }
+}
+.button__item{
+    display: flex;
+    text-align: center;
 }

@@ -244,10 +244,10 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 121%;
   border: none;
+  padding: 12px 28px;
 }
 .button__form--buy {
   margin-right: 14px;
-  min-width: 120px;
 }
 .button__form--buy:hover, .button__form--buy :focus {
   background-color: #FCF1E0;
@@ -255,7 +255,6 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 }
 .button__form--how {
   opacity: 1;
-  min-width: 159px;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #FFFFFF;
 }
@@ -296,6 +295,13 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 .pointer--container:hover .pointer__icon, .pointer--container :focus .pointer__icon {
   fill: #FFFFFF;
   background-color: var(--accent-text);
+}
+
+.button__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
 .preference {
@@ -369,6 +375,9 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+.taste__item:hover .taste__card {
+  display: block;
+}
 
 .taste__name {
   font-weight: 600;
@@ -385,6 +394,50 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .taste__images {
   border-radius: 15px;
+}
+
+.taste__card {
+  background-color: #FFF;
+  border-radius: 15px;
+  padding: 28px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.taste__card__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.info__name {
+  padding: 6px 16px;
+  background-color: var(--accent-text);
+  border-radius: 35px;
+  color: #FFF;
+  margin-right: 6px;
+}
+
+.info__benefits {
+  padding: 6px 16px;
+  border-radius: 35px;
+  border-radius: 35px;
+  border: 1px solid var(--unnamed, #FD9222);
+}
+
+.taste__card__text {
+  font-size: 14px;
+  font-family: Montserrat;
+  line-height: 18px;
+  letter-spacing: -0.28px;
 }
 
 .made__title {
@@ -1395,8 +1448,8 @@ textarea {
 @media screen and (min-width: 768px) {
   .hero {
     padding: 671px 40px 40px 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0)), to(rgba(17, 17, 17, 0.4))), url(/image/jpg/hero/table/chocolate1.jpg);
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(/image/jpg/hero/table/chocolate1.jpg);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0)), to(rgba(17, 17, 17, 0.4))), url(../image/jpg/hero/table/chocolate1.jpg);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../image/jpg/hero/table/chocolate1.jpg);
   }
   .hero__title {
     width: 484px;
@@ -2016,6 +2069,14 @@ textarea {
     gap: 19px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+  .taste__card {
+    padding: 20px;
+  }
+  .info__name {
+    font-size: 10px;
+    font-family: Montserrat;
+    line-height: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
