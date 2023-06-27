@@ -366,6 +366,12 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
 
 .taste__item {
   position: relative;
+  overflow: hidden;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms;
+  transition: box-shadow 2500ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2500ms, cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms;
+  transition: box-shadow 2500ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 .taste__item:not(:last-child) {
   margin-bottom: 20px;
@@ -374,9 +380,6 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   .taste__item--white--second {
     display: none;
   }
-}
-.taste__item:hover .taste__card {
-  display: block;
 }
 
 .taste__name {
@@ -402,13 +405,21 @@ a, p, ul, li, h1, h2, h3, h4, h5, h6 {
   padding: 28px;
   position: absolute;
   top: 0;
-  right: 0;
-  display: none;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .taste__card__title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 8px;
+}
+.taste__item:hover .taste__card, .taste__item:focus .taste__card {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .card__date {
@@ -1406,6 +1417,7 @@ textarea {
     padding-left: 32px;
     padding-right: 32px;
     margin-bottom: 100px;
+    overflow: hidden;
   }
   .container--subscribe {
     margin-bottom: 0;

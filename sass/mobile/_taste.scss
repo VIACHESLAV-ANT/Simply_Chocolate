@@ -24,7 +24,8 @@
 
 .taste__item{
     position: relative;
-    // border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 2500ms, cubic-bezier(0.4, 0, 0.2, 1);
 
     &:not(:last-child){
         margin-bottom: 20px;
@@ -36,9 +37,11 @@
         }
     }
 
-    &:hover .taste__card{
-        display: block;
-    }
+    // &:hover .taste__card{
+    //     display: block;
+    //     transform: translatey(0);
+        transition: box-shadow 2500ms, cubic-bezier(0.4, 0, 0.2, 1);
+    // }
 }
 
 .taste__name{
@@ -68,14 +71,20 @@
     padding: 28px;
     position: absolute;
     top:0;
-    right: 0;
-    display: none;
+    transform: translateY(100%);
+    transition: box-shadow 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    // display: none;
 
     &__title{
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 8px;
     }
+
+    .taste__item:hover &,
+    .taste__item:focus & {
+    transform: translateY(0%);
+  }
 }
 
 .card__date{
